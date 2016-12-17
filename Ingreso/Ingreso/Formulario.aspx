@@ -34,7 +34,7 @@
             <tr>
                 <td class="auto-style3">Apellido</td>
                 <td class="auto-style1">
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -59,16 +59,12 @@
                 <td class="auto-style3">Telefono</td>
                 <td class="auto-style1">
                     <asp:TextBox ID="TextBox5" runat="server" style="margin-left: 16px"></asp:TextBox>
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox5" ErrorMessage="Telefono no valido" ValidationExpression="^\+?\d{1,3}?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$  ">*</asp:RegularExpressionValidator>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox5" ErrorMessage="RequiredFieldValidator">*</asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style3">Correo Electrónico</td>
                 <td class="auto-style1">
                     <asp:TextBox ID="TextBox6" runat="server" style="margin-left: 17px"></asp:TextBox>
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBox6" ErrorMessage="Direccion de correo no valida" ValidationExpression="^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$">*</asp:RegularExpressionValidator>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox6" ErrorMessage="RequiredFieldValidator">*</asp:RequiredFieldValidator>
                 </td>
             </tr>
         </table>

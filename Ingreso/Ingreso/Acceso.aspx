@@ -11,7 +11,7 @@
             text-align: center;
         }
         .auto-style1 {
-            width: 53%;
+            width: 58%;
             background-color: #C0C0C0;
         }
         .auto-style5 {
@@ -42,11 +42,12 @@
             CENTRO DE CAPACITACIÓN</div>
         <p class="auto-style3">
             Formulario de Inscripción</p>
-        <table align="center" class="auto-style1">
+        <table class="auto-style1">
             <tr>
                 <td class="auto-style5">DNI</td>
                 <td class="auto-style6">
                     <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="RegularExpressionValidator" ValidationExpression="\d{8}">DNI Incorrecto</asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
